@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.588);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+/**.header--blurred {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.3); 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+  }**/
+  
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1800px;
+}
+
+/**.logo {
+    height: 50px;
+    width: 10px;
+}**/
+
+.nav-logo {
+    height: 50px;
+    width: 50px;
+}
+.logo {
+    background-image:url("turkey logo.png");
+    height:50px;
+    width:8%;
+    background-size: cover;
+}
+
+/**.search-bar {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+    outline: none;
+    width: 500px;
+    margin-left: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: border 0.3s;
+}
+
+.search-bar:hover {
+    border: 1px solid black;
+}**/
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn, .hotels-btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.hotels-btn {
+    background-color: transparent;
+    border: 1px solid #A4D14A;
+    color: #A4D14A;
+}
+
+.login-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.hotels-btn:hover {
+    background-color: #A4D14A;
+    color: white;
+}
+
+.language-select {
+    font-size: 16px;
+    cursor: pointer;
+    color: #A4D14A;
+    padding: 8px 12px;
+    border: 1px solid #A4D14A;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.language-select:hover {
+    background-color: #A4D14A;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.carousel {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    top: 80px;
+}
+
+.slides{
+    display: flex;
+    height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    display: none;
+    /**transition: transform 1s ease-in-out;**/
+    transition: opacity 0.5s;
+}
+
+.slide.active {
+    display: flex;
+    opacity: 1; 
+}
+
+.slide video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#tourism, #nature, #destination, #products, #hotels, #history {
+    cursor: pointer;
+}
+
+.left {
+    left: 20px;
+}
+
+.right {
+    right: 20px;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #A4D14A;
+}
+
+.main {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.main h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.main button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #80C341;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #222;
+    border-radius: 20px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 300px;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.card h3 {
+    margin: 20px;
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+   margin-top: 20px;
+}
+.foot2logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("turkey logo.png");
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    height: 90px; 
+    width: 20%; 
+    padding-right:10px 0 10px;
+}
+
+
+.foot2 {
+    background-color: black;
+    color: white;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 4px; 
+    
+
+}
+
+.foot2-text{
+   /* max-width: 150px; /* Set a reasonable max width */
+   /* height: auto;  
+    margin: 50px 10px;**/
+    margin-bottom: 10px; /* Space between logo and text */
+    display: flex; /* Ensure logo is treated as a flex item */
+    justify-content: flex-end;
+    padding-left: 0 ;
+    padding-right:0;
+    
+     /* Space from other content */
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/**.foot2-text {
+    
+        font-size: 1rem; /* Adjust font size for the text *
+        text-align: center; /* Center the text *
+        padding-left: 0; /* Remove left padding *
+        margin-right: 0;
+    
+    
+}**/
+
+/**.mainpoi {
+    padding: 20px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .mainpoi:hover {
+    background-color: #80C341; 
+    color: white;
+  }
+  
+  .mainpoi h1 {
+    margin: 0; 
+  }**/
+
+ /** .card {
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+  
+  .card:hover {
+    background-color: #80C341; 
+    transform: scale(1.05); 
+  }
+  **/
+
+
+  /**.cardma {
+    transition: box-shadow 0.3s ease; 
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+  
+  .cardma:hover {
+    box-shadow: 0 12px 30px rgba(128, 195, 65, 0.7); 
+  }**/
+  
+  
+  
+    
+
+
+
+
+
+
