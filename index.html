@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" 
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous"
+     referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+           <!---- <input type="text" class="search-bar" placeholder="Search" /> -->
+            <ul>
+                <li><button class="login-btn">Login/Register</button></li>
+                <li><button class="hotels-btn"> Hotels</button></li>
+                <li><button class="language-select">EN ▼</button></li>
+                <li><div class="menu-icon">☰</div></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="carousel">
+        <div class="slides">
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="turkeytourism - Copy.mp4" type="video/mp4" />
+                </video>
+                <h2 id="tourism">Tourism</h2>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="turkishhistory - Copy.mp4" type="video/mp4" />
+                </video>
+                <h2 id="hotels">History</h2>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="turkishculture.mp4" type="video/mp4" />
+                </video>
+                <h2 id="destination">Culture</h2>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="turkeygifts.mp4" type="video/mp4" />
+                </video>
+                <h2 id="products">Products & Gifts</h2>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="foodturkish - Copy.mp4" type="video/mp4" />
+                </video>
+                <h2 id="history">Food</h2>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop>
+                    <source src="turkey natureee.mp4" type="video/mp4" />
+                </video>
+                <h2 id="nature">Nature</h2>
+            </div>
+        </div>
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+        <div class="indicator">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+    </section>
+
+
+    <div class="container">
+        <div class="main">
+            <h1 id="scroll1">All Turkey <span style="color: #80C341;">& Experiences</span></h1>
+    <button>All Turkey <span style="color: #80C341;">Experiences</span></button>
+    <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <img src="turkeyimage5jpg.jpg" alt="Istanbul Bucket List">
+                <h3>Istanbul Bucket List</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyimage1.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Hagia Sophia Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyimage2.jpg" alt="Istanbul Archaeological Museums">
+                <h3>Istanbul Archaeological Museums</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyimage4.jpg" alt="Ephesus Experience Museum">
+                <h3>Ephesus Experience Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyimage3.jpg" alt=" ">
+                <h3>Flim Plateaus</h3>
+            </div>
+            <div class="card">
+                <img src="turkey image6.webp" alt="">
+                <h3>Experience Rail</h3>
+                </div>
+                <div class="card">
+                    <img src="turkey image7.webp" alt="">
+                    <h3>Night Museum</h3>
+                    </div>
+                    <div class="card">
+                        <img src="turkey image8.webp" alt="Ephesus Experience Museum">
+                        <h3>cultural journeys</h3>
+                        </div>
+                        <div class="card">
+                            <img src="turkeyimage9.jpg" alt="Ephesus Experience Museum">
+                            <h3>UNESCO</h3>
+                            </div>
+                            <div class="card">
+                                <img src="turkey image10.jpg" alt="Ephesus Experience Museum">
+                                <h3>cultural routes</h3>
+                                </div>
+                        </div>
+  
+
+
+
+                        <div class="container">
+                            <div class="main">
+                                <h1 id="scroll2">Restaurants <span style="color: #80C341;"> & Hotels</span></h1>
+                                <button>Hotels</button>
+                            </div>
+                            <div class="cards owl-carousel owl-theme">
+                                <div class="card">
+                                    <img src="turkeyhotels6.jpg" alt="Istanbul Bucket List">
+                                    <h3>Gazelle resort</h3>
+                                </div>
+                                <div class="card">
+                                    <img src="turkeyfood1.1.jpg" alt="Hagia Sophia History & Experience Museum">
+                                    <h3>Gastrocity</h3>
+                                </div>
+                                
+                                <div class="card">
+                                    <img src="turkeyhotels.jpg" alt="Ephesus Experience Museum">
+                                    <h3>Hyatt regency</h3>
+                                </div>
+                                <div class="card">
+                                    <img src="turkeyhotels3.jpg" alt="Film Plateaus">
+                                    <h3>Le Meridian</h3>
+                                </div>
+                                <div class="card">
+                                    <img src="turkeyhotels4.jpg" alt="Film Plateaus">
+                                    <h3>MyLome</h3>
+                                </div>
+                                <div class="card">
+                                    <img src="turkeyhotels5.jpg" alt="Film Plateaus">
+                                    <h3>Feronya</h3>
+                                </div>
+                                <div class="card">
+                                    <img src="turkeyhotels2.jpg" alt="Film Plateaus">
+                                    <h3>The Green oasis</h3>
+                                </div>
+                            </div>
+                            
+
+   <!---- <div class="container">
+        <div class="main">
+            <h1 id="scroll1">Tourism Insight</h1>
+            <button>Tourism</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="" alt="Istanbul Bucket List">
+                <h3>Istanbul Bucket List</h3>
+            </div>
+            <div class="card">
+                <img src="turkey image10.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Hagia Sophia Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkey image6.webp" alt="Istanbul Archaeological Museums">
+                <h3>Istanbul Archaeological Museums</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyimage3" alt="Ephesus Experience Museum">
+                <h3>Ephesus Experience Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkey image7.webp" alt="Film Plateaus">
+                <h3>Film Plateaus</h3>
+            </div>
+        </div>
+    </div> --->
+
+    <div class="container">
+        <div class="main">
+            <h1 id="scroll2">All Turkey <span style="color: #80C341;">Destinations</span> </h1>
+            <button>All Turkey Destinations</button>
+        </div>
+        <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <img src="turkeydestination.jpg" alt="Istanbul Bucket List">
+                <h3>Skiing</h3>
+            </div>
+            <div class="card">
+                <img src="turkeydestination2.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Vize</h3>
+            </div>
+            <div class="card">
+                <img src="turkeydestination3.jpg" alt="Istanbul Archaeological Museums">
+                <h3>Serfierisar</h3>
+            </div>
+            <div class="card">
+                <img src="turkeydestination4.jpg" alt="Ephesus Experience Museum">
+                <h3>Persembe</h3>
+            </div>
+            <div class="card">
+                <img src="turkeydestination5.jpg" alt="Film Plateaus">
+                <h3>Hatay</h3>
+            </div>
+        </div>
+
+
+
+
+
+
+
+   <!---- <div class="container">
+        <div class="main">
+            <h1 id="scroll2">Restaurants & Hotels</h1>
+            <button>Hotels</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="" alt="Istanbul Bucket List">
+                <h3>Istanbul Bucket List</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyhotels.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Hagia Sophia Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyhotels2.jpg" alt="Istanbul Archaeological Museums">
+                <h3>Istanbul Archaeological Museums</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyhotels3.jpg" alt="Ephesus Experience Museum">
+                <h3>Ephesus Experience Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyhotels4.jpg" alt="Film Plateaus">
+                <h3>Film Plateaus</h3>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="main">
+            <h1 id="scroll5">Heritage <span style="color: #80C341;">& Culture</span></h1>
+            <button>History</button>
+        </div>
+        <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <img src="turkeyheritage1.jpg" alt="">
+                <h3></h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage2.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Ayakin</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage3.webp" alt="">
+                <h3>Konya</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage4.jpg" alt="Ephesus Experience Museum">
+                <h3>Aydin</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage5.jpg" alt="Film Plateaus">
+                <h3>Diyar Bakir</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage6.jpg" alt="Film Plateaus">
+                <h3></h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage7.jpg" alt="Film Plateaus">
+                <h3>Batman</h3>
+            </div>
+        </div>
+    <!--<div class="container">
+        <div class="main">
+            <h1 id="scroll4">Products and Gifts</h1>
+            <button>Gifts</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="tgaorta" alt="Istanbul Bucket List">
+                <h3>Istanbul Bucket List</h3>
+            </div>
+            <div class="card">
+                <img src="hagia-sophia.webp" alt="Hagia Sophia History & Experience Museum">
+                <h3>Hagia Sophia Museum</h3>
+            </div>
+            <div class="card">
+                <img src="1-efes.jpg" alt="Istanbul Archaeological Museums">
+                <h3>Istanbul Archaeological Museums</h3>
+            </div>
+            <div class="card">
+                <img src="ism-kart.jpg" alt="Ephesus Experience Museum">
+                <h3>Ephesus Experience Museum</h3>
+            </div>
+            <div class="card">
+                <img src="filmplateauskart.jpg" alt="Film Plateaus">
+                <h3>Film Plateaus</h3>
+            </div>
+        </div>
+    </div> -->
+
+   <!----<div class="container">
+        <div class="main">
+            <h1 id="scroll5">Heritage</h1>
+            <button>History</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="turkeyheritage1.jpg" alt="Istanbul Bucket List">
+                <h3>Istanbul Bucket List</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage2.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Hagia Sophia Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage3.webp" alt="Istanbul Archaeological Museums">
+                <h3>Istanbul Archaeological Museums</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage4.jpg" alt="Ephesus Experience Museum">
+                <h3>Ephesus Experience Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeyheritage5.jpg" alt="Film Plateaus">
+                <h3>Film Plateaus</h3>
+            </div>
+        </div>
+    </div> --->
+
+
+    <div class="container">
+        <div class="main">
+            <h1 id="scroll6">Nature & <span style="color: #80C341;">Greens</span></h1>
+            <button>Green</button>
+        </div>
+        <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <img src="turkeynature1.jpg" alt="Istanbul Bucket List">
+                <h3>Fethiye</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature2.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Villages</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature4.webp" alt="Istanbul Archaeological Museums">
+                <h3>Eastern</h3>
+            </div>
+            <div class="card">
+                <img src="turkey3.webp" alt="Ephesus Experience Museum">
+                <h3> Central</h3>
+            </div>
+           <!----<div class="card">
+                <img src="turkeynature5" alt="Film Plateaus">
+                <h3>Film Plateaus</h3> -->
+            
+            <div class="card">
+                <img src="turkeynature9.jpg" alt="Film Plateaus">
+                <h3>Adiyman</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature6.jpg" alt="Film Plateaus">
+                <h3>Datca</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature7.jpg" alt="Film Plateaus">
+                <h3>Duzce</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature8.jpg" alt="Film Plateaus">
+                <h3>Karss</h3>
+            </div>
+        </div>
+
+
+    <!--<div class="container">
+        <div class="main">
+            <h1 id="scroll6">Nature</h1>
+            <button>Green</button>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="turkeynature1.jpg" alt="Istanbul Bucket List">
+                <h3>Istanbul Bucket List</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature2.jpg" alt="Hagia Sophia History & Experience Museum">
+                <h3>Hagia Sophia Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature4.webp" alt="Istanbul Archaeological Museums">
+                <h3>Istanbul Archaeological Museums</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature5.jpg" alt="Ephesus Experience Museum">
+                <h3>Ephesus Experience Museum</h3>
+            </div>
+            <div class="card">
+                <img src="turkeynature6.jpg" alt="Film Plateaus">
+                <h3>Film Plateaus</h3>
+            </div>
+        </div>
+    </div>-->
+
+
+    <div class="footer">
+    </div>
+    <div class="foot1"></div>
+    <div class="foot2">
+        <div class="foot2logo">
+            
+        </div>
+   <div class="foot2-text">Blogs </div>
+   <div class="socialIcons">
+    <a href=""><i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href=""><i class="fa-brands fa-github"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+</div>
+    </div>
+</div>
+<div class="footerBottom">
+    <p> Copyright ©️ 2024 Turkey tourism <span class=""></span></p>
+</div>
+</footer>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"
+ referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" 
+integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" 
+referrerpolicy="no-referrer"></script>
+
+
+    <script>
+     
+     $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+    <script src="index.js"></script>
+</body>
+</html>
